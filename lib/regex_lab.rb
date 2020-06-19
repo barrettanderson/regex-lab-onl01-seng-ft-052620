@@ -14,7 +14,7 @@ end
 
 def words_five_letters_long(text)
   array = text.split(" ")
-  array.grep(/^\w{5}\s/)
+  array.grep(/\b\w{5}\b/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
